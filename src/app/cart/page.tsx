@@ -45,7 +45,7 @@ const Cart = () => {
           {/* start cart */}
           <div className="flex flex-col md:flex-row justify-center items-start gap-6 mt-4">
                   <div className="w-full lg:w-[700px] space-y-4 border rounded-[20px] pt-2 ">
-                    {cartItems.map((data)=>{
+                    {cartItems.map((data,index)=>{
                      return (
                       <div className="flex justify-between border-b px-3 pb-3" key={data.id}>
                        <div className="flex ">
@@ -53,10 +53,10 @@ const Cart = () => {
                              <Image src={data.image} width={100} height={100}  alt={data.name}></Image>
                             </div>
                             <div className="ml-3">
-                                <h1 className="font-bold">{data.name}</h1>
-                                <p>Size:{data.size}</p>
-                                <p>Color:{data.color}</p>
-                                <p className="font-bold">${data.price}</p>
+                                <h1 className="font-bold" key={index}>{data.name}</h1>
+                                <p key={index}>Size:{data.size}</p>
+                                <p key={index}>Color:{data.color}</p>
+                                <p className="font-bold" key={index}>${data.price}</p>
                             </div>
                        </div>
                             <div className="relative">

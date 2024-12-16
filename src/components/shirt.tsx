@@ -82,7 +82,7 @@ export default function Shirt(){
             <div className="grid grid-cols-2 md:grid-cols-3 p-2 md:p-0 md:place-items-center">
                 {/* flex flex-col md:flex-row justify-center items-center md:justify-between px-8 mt-10 */}
                 {
-                    product.map((data)=>{
+                    product.map((data,index)=>{
                         return(
                               <div key={data.id} className={` ${data.id === 3 ? 'hidden' : 'hiddin'} md:block mb-10 mt-1`}>
                                  <Link href={`/product/${data.id}`}>
@@ -94,9 +94,9 @@ export default function Shirt(){
                                   </div>
                                  </Link>
                                 <div>
-                                <p className="text-sm md:text-lg mt-2 font-bold">{data.title}</p>
+                                <p className="text-sm md:text-lg mt-2 font-bold" key={index}>{data.title}</p>
                                 <p className="flex text-yellow-400">{star}</p>
-                                <p  className="font-bold mt-1">{data.price} <span className="text-gray-400 font-bold line-through"> {data.old_price} </span></p>
+                                <p  className="font-bold mt-1" key={index}>{data.price} <span className="text-gray-400 font-bold line-through"> {data.old_price} </span></p>
                                 </div>
                               </div>
                         )

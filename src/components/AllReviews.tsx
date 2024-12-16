@@ -91,14 +91,14 @@ export default function CustomerTestimonials() {
                         <FaStar key={i} className="text-yellow-400 text-sm" />
                       ))}
                     </div>
-                    <h2 className="flex items-center text-lg font-bold mb-2">
+                    <h2 className="flex items-center text-lg font-bold mb-2" key={index}>
                       {testimonial.name}
                       {testimonial.verified && (
                         <FaCircleCheck className="text-green-500 ml-2" />
                       )}
                     </h2>
-                    <p className="text-sm">{testimonial.feedback}</p>
-                    <p className="text-sm text-gray-400 mt-5">{testimonial.date}</p>
+                    <p className="text-sm" key={index}>{testimonial.feedback}</p>
+                    <p className="text-sm text-gray-400 mt-5" key={index}>{testimonial.date}</p>
                   </CardContent>
                 </Card>
                 

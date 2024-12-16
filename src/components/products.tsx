@@ -49,7 +49,7 @@ export default function T_shirts(){
             <h1 className="text-3xl md:text-4xl font-bold text-center">You might also like</h1>
             <div className="grid grid-cols-2 md:grid-cols-4 pl-3 md:pl-0 mt-5 md:place-items-center">
                 {
-                    product.map((data)=>{
+                    product.map((data,index)=>{
                         return(
                               <div key={data.id}>
                                  <Link href={`/product/${data.id}`}>
@@ -61,9 +61,9 @@ export default function T_shirts(){
                                   </div>
                                  </Link>
                                 <div>
-                                <p className="text-lg mt-2 font-bold">{data.title}</p>
-                                <p className="flex text-yellow-400">{star}</p>
-                                <p  className="font-bold mt-1">{data.price} <span className="text-gray-400 font-bold line-through"> {data.old_price} </span></p>
+                                <p className="text-lg mt-2 font-bold" key={index}>{data.title}</p>
+                                <p className="flex text-yellow-400" key={index}>{star}</p>
+                                <p  className="font-bold mt-1" key={index}>{data.price} <span className="text-gray-400 font-bold line-through"> {data.old_price} </span></p>
                                 </div>
                               </div>
                         )

@@ -62,8 +62,8 @@ export default function Products(){
                                 <div>
                                 <p className="text-lg mt-2 font-bold">{data.title}</p>
                                {
-                                star.map(()=>{
-                                    return <p className="flex text-yellow-400" key={data.id}>{star}</p>
+                                star.map((data,index)=>{
+                                    return <p className="flex text-yellow-400" key={index}>{star}</p>
                                 })
                                }
                                 <p  className="font-bold mt-1">{data.price} <span className="text-gray-400 font-bold line-through"> {data.old_price} </span></p>
