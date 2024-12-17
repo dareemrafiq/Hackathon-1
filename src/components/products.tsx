@@ -40,8 +40,15 @@ let product:Iproducts[] = [
 
     }
 ]
-let star = [<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>]
-
+// Adding key prop in star array
+let star = [
+    <FaStar key={1} />,
+    <FaStar key={2} />,
+    <FaStar key={3} />,
+    <FaStar key={4} />,
+    <FaStar key={5} />,
+  ];
+  
 
 export default function T_shirts(){
     return(  
@@ -51,7 +58,7 @@ export default function T_shirts(){
                 {
                     product.map((data,index)=>{
                         return(
-                              <div key={data.id}>
+                              <div key={index}>
                                  <Link href={`/product/${data.id}`}>
                                  <div className="w-[160px] h-[160px] md:w-[290px] mt-5 md:mt-0 md:h-[290px] bg-[#F0EEED] rounded-[20px]">
                                   <Image src={data.img_url} alt={data.title}
@@ -62,7 +69,13 @@ export default function T_shirts(){
                                  </Link>
                                 <div>
                                 <p className="text-lg mt-2 font-bold" key={index}>{data.title}</p>
-                                <p className="flex text-yellow-400" key={index}>{star}</p>
+                                {/* <p className="flex text-yellow-400" key={index}>{star}</p> */}
+                                <div className="flex text-yellow-400">
+                                 {/* Map stars correctly */}
+                                 {star.map((icon, index) => (
+                                   <span key={index}>{icon}</span>
+                                 ))}
+                               </div>
                                 <p  className="font-bold mt-1" key={index}>{data.price} <span className="text-gray-400 font-bold line-through"> {data.old_price} </span></p>
                                 </div>
                               </div>

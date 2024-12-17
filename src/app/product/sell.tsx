@@ -40,8 +40,15 @@ let product:Iproducts[] = [
 
     }
 ]
-let star = [<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>]
-
+// Adding key prop in star array
+let star = [
+    <FaStar key={1} />,
+    <FaStar key={2} />,
+    <FaStar key={3} />,
+    <FaStar key={4} />,
+    <FaStar key={5} />,
+  ];
+  
 export default function Top_sell(){
     return(
         <div className="w-full h-[500px] mt-10">
@@ -61,7 +68,13 @@ export default function Top_sell(){
                                  </Link>
                                 <div>
                                 <p className="text-lg mt-2 font-bold" key={index}>{data.title}</p>
-                                <p className="flex text-yellow-400">{star}</p>
+                                {/* <p className="flex text-yellow-400">{star}</p> */}
+                                <div className="flex text-yellow-400">
+                                 {/* Map stars correctly */}
+                                 {star.map((icon, index) => (
+                                   <span key={index}>{icon}</span>
+                                 ))}
+                               </div>
                                 <p  className="font-bold mt-1" key={index}>{data.price} <span className="text-gray-400 font-bold line-through"> {data.old_price} </span></p>
                                 </div>
                               </div>

@@ -73,8 +73,15 @@ let product:Iproducts[] = [
     },
     
 ]
-let star = [<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>]
-
+// Adding key prop in star array
+let star = [
+    <FaStar key={1} />,
+    <FaStar key={2} />,
+    <FaStar key={3} />,
+    <FaStar key={4} />,
+    <FaStar key={5} />,
+  ];
+  
 export default function Shirt(){
     return(
         <div className="w-full md:h-[500px] ">
@@ -84,9 +91,9 @@ export default function Shirt(){
                 {
                     product.map((data,index)=>{
                         return(
-                              <div key={data.id} className={` ${data.id === 3 ? 'hidden' : 'hiddin'} md:block mb-10 mt-1`}>
+                              <div className={` ${data.id === 3 ? 'hidden' : 'hiddin'} md:block mb-10 mt-1`} key={index}>
                                  <Link href={`/product/${data.id}`}>
-                                 <div className="w-[160px] md:w-[230px] h-[160px] md:h-[230px] bg-[#F0EEED] rounded-[20px]">
+                                 <div className="w-[160px] md:w-[230px] h-[160px] md:h-[230px] bg-[#F0EEED] rounded-[20px]" key={index}>
                                   <Image src={data.img_url} alt={data.title}
                                   className="w-full h-full rounded-[20px]"
                                  width={100} height={100}></Image>
@@ -95,7 +102,13 @@ export default function Shirt(){
                                  </Link>
                                 <div>
                                 <p className="text-sm md:text-lg mt-2 font-bold" key={index}>{data.title}</p>
-                                <p className="flex text-yellow-400">{star}</p>
+                                {/* <p className="flex text-yellow-400">{star}</p> */}
+                                <div className="flex text-yellow-400">
+                                 {/* Map stars correctly */}
+                                 {star.map((icon, index) => (
+                                   <span key={index}>{icon}</span>
+                                 ))}
+                               </div>
                                 <p  className="font-bold mt-1" key={index}>{data.price} <span className="text-gray-400 font-bold line-through"> {data.old_price} </span></p>
                                 </div>
                               </div>

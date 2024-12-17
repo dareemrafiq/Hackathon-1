@@ -40,7 +40,15 @@ let product:Iproducts[] = [
 
     }
 ]
-let star = [<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>,<FaStar/>]
+// Adding key prop in star array
+let star = [
+    <FaStar key={1} />,
+    <FaStar key={2} />,
+    <FaStar key={3} />,
+    <FaStar key={4} />,
+    <FaStar key={5} />,
+  ];
+  
 
 export default function Products(){
     return(
@@ -61,11 +69,14 @@ export default function Products(){
                                   </Link>
                                 <div>
                                 <p className="text-lg mt-2 font-bold">{data.title}</p>
-                               {
-                                star.map((data,index)=>{
-                                    return <p className="flex text-yellow-400" key={index}>{star}</p>
-                                })
-                               }
+                                <div className="flex text-yellow-400">
+                                 {/* Map stars correctly */}
+                                 {star.map((icon, index) => (
+                                   <span key={index}>{icon}</span>
+                                 ))}
+                               </div>
+                            
+                                {/* <div className="flex text-yellow-400">{star}</div> */}
                                 <p  className="font-bold mt-1">{data.price} <span className="text-gray-400 font-bold line-through"> {data.old_price} </span></p>
                                 </div>
                               </div>
