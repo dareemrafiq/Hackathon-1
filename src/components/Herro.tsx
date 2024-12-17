@@ -27,7 +27,7 @@ export default function Hero(){
                </div>
               {/* right */}
               <div className="relative">
-              <Image src={"/images/profile.png"}
+              <Image src={"/profile.png"}
                className="w-[500px] h-[500px]"
               width={200} height={200} alt="hero-image"></Image> 
                <Image src={"/images/star.png"}
