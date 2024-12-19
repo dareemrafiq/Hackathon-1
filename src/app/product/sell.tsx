@@ -90,8 +90,9 @@ export default function Products() {
             </div>
         </div>
        <div className="flex justify-center items-start mt-5">
-       <Button variant={"outline"} className=" sm:mt-0 w-[80%]  sm:w-[200px] rounded-[20px]">View all</Button>
-
+        <Link href="/product">
+        <Button variant={"outline"} className=" sm:mt-0 w-[80%]  sm:w-[200px] rounded-[20px]">View all</Button>
+        </Link>
        </div>
     </>
     );
