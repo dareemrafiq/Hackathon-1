@@ -1,3 +1,4 @@
+import { BreadcrumbCollapsed } from "@/components/Breadcrupm";
 import { Button } from "@/components/ui/button";
 import { Minus, Plus } from "lucide-react";
 import Image from "next/image";
@@ -38,9 +39,12 @@ const Cart = () => {
   const total = subtotal - discount + deliveryFee;
 
   return (
-       <div className="flex flex-col justify-center items-center p-2 mt-5 max-w-screen-2xl  mx-auto">  
-          <div className="w-[95%] 2xl:w-[80%]">
-          <h1 className="text-2xl md:text-3xl font-bold pl-5">Your cart</h1>
+       <div className="flex flex-col justify-center items-center  max-w-screen-2xl  mx-auto relative"> 
+         <span className="absolute top-0 left-0">
+         <BreadcrumbCollapsed/> 
+         </span>
+          <div className="w-[95%] 2xl:w-[80%] mt-10">
+          <h1 className="text-2xl md:text-3xl font-bold pl-2">Your cart</h1>
           </div>
           {/* start cart */}
           <div className="flex flex-col md:flex-row justify-center items-start gap-6 mt-4">
@@ -59,9 +63,9 @@ const Cart = () => {
                                 <p className="font-bold" key={index}>${data.price}</p>
                             </div>
                        </div>
-                            <div className="relative">
+                            <div className="relative ">
                               <MdDelete className="absolute top-0 text-xl right-0 sm:right-3 text-red-500"/>
-                              <div className="w-[100px] h-[40px] flex justify-between p-3 items-center rounded-[62px] bg-[#F0F0F0] text-gray-400 absolute bottom-0 right-0 ">
+                              <div className="md:w-[100px] h-[40px] flex justify-between p-3 items-center rounded-[62px] bg-[#F0F0F0] text-gray-400 absolute bottom-0 right-0 ">
                                 <Minus/>
                                 1
                                 <Plus/>
@@ -93,7 +97,7 @@ const Cart = () => {
                                  <p>${total.toFixed(2)}</p>
                                </div>
                                <div className="flex justify-between items-center">
-                                <input className="h-10 rounded-[6px] bg-[#F0F0F0] px-4 w-[360px] border-none" type="search" placeholder="Add promo code" />
+                                <input className="h-10 rounded-[6px] bg-[#F0F0F0] px-4 md:w-[360px] border-none" type="search" placeholder="Add promo code" />
                                 <Button className="w-[100px] rounded-[20px]">Apply</Button>
                                </div>
                              </div>

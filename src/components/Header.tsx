@@ -14,7 +14,7 @@ import { NavigationMenuDemo } from "./navigationMenu";
 
 export default function Header() {
   return (
-     <header className="w-full border-b bg-white h-[60px] md:h-[80px] flex justify-between  pr-2 items-center max-w-screen-2xl mx-auto">
+     <header className="w-full  border-b bg-white h-[60px] md:h-[90px] flex justify-between  pr-2 items-center max-w-screen-2xl mx-auto">
            <div className="flex justify-center items-center">
            <SheetSide/>
             {/* logo */}
@@ -26,9 +26,9 @@ export default function Header() {
                     
                 
                     <Link href={``}><NavigationMenuDemo/></Link>
-                    <Link href={`/product`}>On Sale</Link>
+                    <Link href={`/casual`}>On Sale</Link>
                     <Link href={"/product"}>New Arrivals</Link>
-                    <Link href={"/product"}>Brands</Link>
+                    <Link href={"/"}>Brands</Link>
 
                 </li>
             </ul>

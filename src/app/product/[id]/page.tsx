@@ -37,7 +37,7 @@ let product: Iproducts[] = [
     img_url: "/product1.png",
     img1: "/detail1.png",
     img2: "/detail2.png",
-    img3: "/detail3.png",
+    img3: "/product1.png",
   },
   {
     title: "SKINNY FIT JEANS",
@@ -47,7 +47,7 @@ let product: Iproducts[] = [
     old_price: "$200",
     img1: "/detail1.png",
     img2: "/detail2.png",
-    img3: "/detail3.png",
+    img3: "/product2.png",
   },
   {
     title: "CHECKERED SHIRT",
@@ -56,7 +56,7 @@ let product: Iproducts[] = [
     img_url: "/product3.png",
     img1: "/detail1.png",
     img2: "/detail2.png",
-    img3: "/detail3.png",
+    img3: "/product3.png",
   },
   {
     title: "SLEEVE STRIPED T-SHIRT",
@@ -66,7 +66,7 @@ let product: Iproducts[] = [
     old_price: "$200",
     img1: "/detail1.png",
     img2: "/detail2.png",
-    img3: "/detail3.png",
+    img3: "/product4.png",
   },
 ];
 
@@ -81,7 +81,7 @@ export default function Pro_Detail() {
   return (
     <div>
       <BreadcrumbCollapsed />
-      <div className="flex flex-col md:flex-row justify-center sm:justify-evenly sm:mt-10 p-5 sm:p-0 max-w-screen-2xl  mx-auto">
+      <div className="flex flex-col md:flex-row justify-center  sm:justify-evenly sm:mt-10 p-5  sm:p-0 max-w-screen-2xl  mx-auto">
         {/* left */}
         <div className="flex sm:flex-col justify-between items-center w-full sm:w-[152px] order-2 sm:order-1">
           {/* images */}
@@ -101,7 +101,7 @@ export default function Pro_Detail() {
           ></Image>
           <Image
             src={item.img3}
-            className="w-[100px] sm:w-full h-[100px] sm:h-[150px] sm:mt-3"
+            className="w-[100px] sm:w-full h-[100px] sm:h-[150px] sm:mt-3 rounded-[20px]"
             alt="productdetaile"
             width={100}
             height={100}
@@ -112,13 +112,13 @@ export default function Pro_Detail() {
           <Image
             src={item.img3}
             alt="productdetaile"
-            className="w-full h-[95%]"
+            className="w-full h-[95%] rounded-[20px]"
             width={100}
             height={100}
           ></Image>
         </div>
         {/* right div */}
-        <div className="w-full sm:w-[600px] h-[500px] mt-3 order-3">
+        <div className="w-full sm:w-[500px] h-[500px] mt-3 order-3">
           <h1 className="text-2xl md:text-3xl font-bold">One Life Graphic T-shirt</h1>
           {/* <div className="flex text-yellow-400">{star}</div> */}
           <div className="flex text-yellow-400">
@@ -128,7 +128,7 @@ export default function Pro_Detail() {
                                  ))}
                                </div>
           <p className="font-bold mt-1">
-            {item.price} <span>{item.old_price}</span>{" "}
+            {item.price} <span className="text-gray-500 line-through ml-1">{item.old_price}</span>{" "}
           </p>
           <p>
             This graphic t-shirt which is perfect for any occasion. Crafted from a soft and breathable

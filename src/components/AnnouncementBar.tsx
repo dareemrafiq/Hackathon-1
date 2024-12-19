@@ -2,7 +2,7 @@ import { MdOutlineClear } from "react-icons/md";
 
 function AnnouncementBar() {
   return (
-    <div className='w-full h-[38px] bg-black text-white flex justify-center items-center  max-w-screen-2xl mx-auto'>
+    <div className='w-full h-[38px]  bg-black text-white flex justify-center items-center  max-w-screen-2xl mx-auto'>
       {/* Left side */}
       <div className='flex items-center space-x-2'>
         <h1 className='text-[8px] md:text-xs '>

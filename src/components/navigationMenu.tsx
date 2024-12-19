@@ -19,27 +19,26 @@ import { RiArrowDropDownLine } from "react-icons/ri"
 const components: { title: string; href: string; description: string }[] = [
  
   {
-    title: "casual",
+    title: "Men's clothes",
     href: "/casual",
     description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+      "In attractive and spectacular colors and designs.",
   },
   {
-    title: "Scroll-area",
-    href: "/docs/primitives/scroll-area",
-    description: "Visually or semantically separates content.",
+    title: "Women's clothes",
+    href: "/casual",
+    description: "Ladies, your style and tastes are important to us",
   },
   {
-    title: "Tabs",
-    href: "/docs/primitives/tabs",
+    title: "Kids clothes",
+    href: "/casual",
     description:
-      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+      "For all ages, with happy and beautiful colors",
   },
   {
-    title: "Tooltip",
-    href: "/docs/primitives/tooltip",
-    description:
-      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+    title: "Bags and Shoes",
+    href: "/casual",
+    description:"Suitable for men, women and all tastes and styles",
   },
 ]
 

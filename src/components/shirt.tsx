@@ -84,16 +84,16 @@ let star = [
   
 export default function Shirt(){
     return(
-        <div className="w-full md:h-[500px] ">
+        <div className="w-full h-full">
             <h1 className="text-[25px] font-bold  relative pl-5">Casual <span className=" text-sm font-bold  flex items-center justify-center absolute right-10 top-2">Most Popular <RiArrowDropDownLine/></span></h1>
             <div className="grid grid-cols-2 md:grid-cols-3 p-2 md:p-0 md:place-items-center">
                 {/* flex flex-col md:flex-row justify-center items-center md:justify-between px-8 mt-10 */}
                 {
                     product.map((data,index)=>{
                         return(
-                              <div className={` ${data.id === 3 ? 'hidden' : 'hiddin'} md:block mb-10 mt-1`} key={index}>
+                              <div className={` ${data.id === 3 ? 'hidden' : 'hiddin'} md:block mb-6 mt-1`} key={index}>
                                  <Link href={`/product/${data.id}`}>
-                                 <div className="w-[160px] md:w-[230px] h-[160px] md:h-[230px] bg-[#F0EEED] rounded-[20px]" key={index}>
+                                 <div className="w-[160px] md:w-[240px] md:h-[240x] lg:w-[290px] h-[160px] lg:h-[290px] bg-[#F0EEED] rounded-[20px]" key={index}>
                                   <Image src={data.img_url} alt={data.title}
                                   className="w-full h-full rounded-[20px]"
                                  width={100} height={100}></Image>
