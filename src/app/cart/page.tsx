@@ -47,7 +47,7 @@ const Cart = () => {
           <h1 className="text-2xl md:text-3xl font-bold pl-2">Your cart</h1>
           </div>
           {/* start cart */}
-          <div className="w-[90%] sm:w-full flex flex-col md:flex-row justify-center items-start gap-6 mt-4">
+          <div className="w-[95%] sm:w-full flex flex-col md:flex-row justify-center items-start gap-6 mt-4">
                   <div className="w-full lg:w-[700px] space-y-4 border rounded-[20px] pt-2 ">
                     {cartItems.map((data,index)=>{
                      return (
@@ -97,7 +97,7 @@ const Cart = () => {
                                  <p>${total.toFixed(2)}</p>
                                </div>
                                <div className="flex justify-between items-center">
-                                <input className="h-10 rounded-[6px] bg-[#F0F0F0] px-4 md:w-[360px] border-none" type="search" placeholder="Add promo code" />
+                                <input className="h-10 rounded-[6px] bg-[#F0F0F0] px-4 w-[200px] md:w-[360px] border-none" type="search" placeholder="Add promo code" />
                                 <Button className="w-[100px] rounded-[20px]">Apply</Button>
                                </div>
                              </div>
