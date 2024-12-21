@@ -15,28 +15,28 @@ interface Iproducts {
 let product: Iproducts[] = [
     {
         title: "T-SHIRT WITH TAPE DETAILS",
-        id: 1,
+        id: 5,
         price: "$120",
-        img_url: "/product1.png"
+        img_url: "/images/sell1.png"
     },
     {
         title: "SKINNY FIT JEANS",
-        id: 2,
+        id: 6,
         price: "$120",
-        img_url: "/product2.png",
+        img_url: "/images/sell2.png",
         old_price: "$200"
     },
     {
         title: "CHECKERED SHIRT",
-        id: 3,
+        id: 7,
         price: "$120",
-        img_url: "/product3.png"
+        img_url: "/images/sell3.png"
     },
     {
         title: "SLEEVE STRIPED T-SHIRT",
-        id: 4,
+        id: 8,
         price: "$120",
-        img_url: "/product4.png",
+        img_url: "/images/sell4.png",
         old_price: "$200"
     }
 ]

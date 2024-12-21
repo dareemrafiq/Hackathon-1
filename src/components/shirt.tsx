@@ -35,41 +35,41 @@ let product:Iproducts[] = [
     },
     {
      title:"T-SHIRT WITH TAPE DETAILS",
-     id:1,
+     id:13,
      price:"$120",
-     img_url:"/product1.png"
+     img_url:"/images/sell1.png"
     },
     {
      title:"SKINNY FIT JEANS",
-     id:2,
+     id:14,
      price:"$120",
-     img_url:"/product2.png",
+     img_url:"/images/sell2.png",
      old_price:"$200"
     },
     {
      title:"CHECKERED SHIRT",
-     id:3,
+     id:15,
      price:"$120",
-     img_url:"/product3.png"
+     img_url:"/images/sell4.png",
     },
     {
      title:"T-SHIRT WITH TAPE DETAILS",
-     id:1,
+     id:16,
      price:"$120",
-     img_url:"/product1.png"
+     img_url:"/images/might1.png"
     },
     {
      title:"SKINNY FIT JEANS",
-     id:2,
+     id:17,
      price:"$120",
-     img_url:"/product2.png",
+     img_url:"/images/might2.png",
      old_price:"$200"
     },
     {
      title:"CHECKERED SHIRT",
-     id:3,
+     id:18,
      price:"$120",
-     img_url:"/product3.png"
+     img_url:"/images/might3.png"
     },
     
 ]

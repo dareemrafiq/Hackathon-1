@@ -68,6 +68,152 @@ let product: Iproducts[] = [
     img2: "/detail2.png",
     img3: "/product4.png",
   },
+  {
+    title: "SLEEVE STRIPED T-SHIRT",
+    id: 5,
+    price: "$120",
+    img_url: "/product4.png",
+    old_price: "$200",
+    img1: "/imaegs/sell1.png",
+    img2: "/detail2.png",
+    img3: "/images/sell1.png",
+  },
+  {
+    title: "SLEEVE STRIPED T-SHIRT",
+    id: 6,
+    price: "$120",
+    img_url: "/product4.png",
+    old_price: "$200",
+    img1: "/images/sell1.png",
+    img2: "/detail2.png",
+    img3: "/images/sell2.png",
+  },
+  {
+    title: "SLEEVE STRIPED T-SHIRT",
+    id: 7,
+    price: "$120",
+    img_url: "/product4.png",
+    old_price: "$200",
+    img1: "/images/sell1.png",
+    img2: "/detail2.png",
+    img3: "/images/sell3.png",
+  },
+  {
+    title: "SLEEVE STRIPED T-SHIRT",
+    id: 8,
+    price: "$120",
+    img_url: "/product4.png",
+    old_price: "$200",
+    img1: "/images/sell1.png",
+    img2: "/detail2.png",
+    img3: "/images/sell4.png",
+  },
+  {
+    title: "SLEEVE STRIPED T-SHIRT",
+    id: 9,
+    price: "$120",
+    img_url: "/product4.png",
+    old_price: "$200",
+    img1: "/images/sell1.png",
+    img2: "/detail2.png",
+    img3: "/images/might1.png",
+  },
+  {
+    title: "SLEEVE STRIPED T-SHIRT",
+    id: 10,
+    price: "$120",
+    img_url: "/product4.png",
+    old_price: "$200",
+    img1: "/images/sell1.png",
+    img2: "/detail2.png",
+    img3: "/images/might2.png",
+  },
+  {
+    title: "SLEEVE STRIPED T-SHIRT",
+    id: 11,
+    price: "$120",
+    img_url: "/product4.png",
+    old_price: "$200",
+    img1: "/images/sell1.png",
+    img2: "/detail2.png",
+    img3: "/images/might3.png",
+  },
+  
+  {
+    title: "SLEEVE STRIPED T-SHIRT",
+    id: 12,
+    price: "$120",
+    img_url: "/product4.png",
+    old_price: "$200",
+    img1: "/images/sell1.png",
+    img2: "/detail2.png",
+    img3: "/images/might4.png",
+  },
+  
+  {
+    title: "SLEEVE STRIPED T-SHIRT",
+    id: 13,
+    price: "$120",
+    img_url: "/product4.png",
+    old_price: "$200",
+    img1: "/images/sell1.png",
+    img2: "/detail2.png",
+    img3: "/images/sell1.png",
+  },
+  
+  {
+    title: "SLEEVE STRIPED T-SHIRT",
+    id: 14,
+    price: "$120",
+    img_url: "/product4.png",
+    old_price: "$200",
+    img1: "/images/sell1.png",
+    img2: "/detail2.png",
+    img3: "/images/sell2.png",
+  },
+  
+  {
+    title: "SLEEVE STRIPED T-SHIRT",
+    id: 15,
+    price: "$120",
+    img_url: "/product4.png",
+    old_price: "$200",
+    img1: "/images/sell1.png",
+    img2: "/detail2.png",
+    img3:"/images/sell4.png",
+  },
+  {
+    title: "SLEEVE STRIPED T-SHIRT",
+    id: 16,
+    price: "$120",
+    img_url: "/product4.png",
+    old_price: "$200",
+    img1: "/images/sell1.png",
+    img2: "/detail2.png",
+    img3: "/images/might1.png",
+  },
+  {
+    title: "SLEEVE STRIPED T-SHIRT",
+    id: 17,
+    price: "$120",
+    img_url: "/product4.png",
+    old_price: "$200",
+    img1: "/images/sell1.png",
+    img2: "/detail2.png",
+    img3: "/images/might2.png",
+  },
+  {
+    title: "SLEEVE STRIPED T-SHIRT",
+    id: 18,
+    price: "$120",
+    img_url: "/product4.png",
+    old_price: "$200",
+    img1: "/images/sell1.png",
+    img2: "/detail2.png",
+    img3: "/images/might3.png",
+  },
+  
+
 ];
 
 export default function Pro_Detail() {
@@ -87,14 +233,14 @@ export default function Pro_Detail() {
           {/* images */}
           <Image
             src={item.img1}
-            className="w-[100px] sm:w-full h-[100px] sm:h-[150px]"
+            className="w-[100px] sm:w-full h-[100px] sm:h-[150px]  rounded-[20px]"
             alt="productdetaile"
             width={100}
             height={100}
           ></Image>
           <Image
             src={item.img2}
-            className="w-[100px] sm:w-full h-[100px] sm:h-[150px] sm:mt-3"
+            className="w-[100px] sm:w-full h-[100px] sm:h-[150px] sm:mt-3  rounded-[20px]"
             alt="productdetaile"
             width={100}
             height={100}

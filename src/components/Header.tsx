@@ -28,7 +28,7 @@ export default function Header() {
                     <Link href={``}><NavigationMenuDemo/></Link>
                     <Link href={`/casual`}>On Sale</Link>
                     <Link href={"/product"}>New Arrivals</Link>
-                    <Link href={"/"}>Brands</Link>
+                    <Link href={"/brands"}>Brands</Link>
 
                 </li>
             </ul>
